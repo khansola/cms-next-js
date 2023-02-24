@@ -1,34 +1,32 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-
+import articlelist from '@/components/assets/image/Articlelist.png'
+import Image from 'next/image'
 
 export default function CardContents() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
-            <CardMedia
-                component="img"
-                alt="green iguana"
-                height="140"
-                image="https://cdn.anime-planet.com/characters/primary/piaro-1.webp?t=1629319780"
-            />
+        <Card sx={{ maxWidth: 384 }}>
+            <div>
+                <Image
+                    src={articlelist}
+                    alt={"vector.png"}
+                // width={18}
+                // height={20.75}
+                ></Image>
+            </div>
             <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                    Lizard
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
-                    Lizards are a widespread group of squamate reptiles, with over 6,000
-                    species, ranging across all continents except Antarctica
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo luctus venenatis. Integer rhoncus iaculis quam, et iaculis odio sagittis consequat. In at enim justo. Ut in lacus a sem iaculis accumsan.
                 </Typography>
             </CardContent>
-            <CardActions>
-                <Button size="small">Share</Button>
-                <Button size="small">Learn More</Button>
-            </CardActions>
+            <div>
+                <p>31 January 2030</p>
+            </div>
         </Card>
     );
 }

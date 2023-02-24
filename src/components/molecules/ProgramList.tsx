@@ -4,7 +4,7 @@ import Button from '../atoms/Button'
 
 const ProgramList = () => {
   return (
-    <div className=' flex flex-col items-center justify-center mt-10 gap-5'>
+    <div className=' flex flex-col items-center justify-center mt-10 gap-5 px-[7%] '>
         <div className=' text-center'>
             <h1>Program Unggulan SEHJIRA</h1>
         </div>
@@ -14,9 +14,11 @@ const ProgramList = () => {
         <CardContents />
         <CardContents />
         </div>
-        <Button  action={(e) => {alert('Triggered')}} title="Lihat semua Program Unggulan"/>
+        <Button  action={(e) => {
+          alert('Triggered')}}
+          title="Lihat semua Program Unggulan"/>
     </div>
-  )
-}
+  );
+};
 
 export default ProgramList

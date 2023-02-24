@@ -12,7 +12,7 @@ import Footer2 from "@/components/molecules/Footer2";
 const index = () => {
 	return (
 		<BlankTemplate>
-			<CommonSEO title="Home" description="Description of Create Next Page by Faizmul" />
+			<CommonSEO title="Home" description="Description of Create Next Page by GG" />
 			<PrimaryNavigation />
 			<ImageHome />
 			<Button action={(e) => { alert('Triggered') }} title="Pelajari Lebih Lanjut" />

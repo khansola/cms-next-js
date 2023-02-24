@@ -1,5 +1,7 @@
 import Link from "next/link";
-import Button from "../atoms/Button";
+import Image from "next/image";
+import img1 from '@/components/assets/image/LOGO SEHJIRA footer.png'
+
 
 const PrimaryNavigation = () => {
 	const userData = {
@@ -10,19 +12,36 @@ const PrimaryNavigation = () => {
 	};
 
 	return (
-		<nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-			<div className="flex items-center flex-shrink-0 text-white mr-6">
-				<span className="font-semibold text-xl tracking-tight">Logo</span>
-			</div>
-			<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
-				<ul className="lg:flex-grow">
-					<Link className="hyperlink" href="/">Home</Link>
-					<Link className="hyperlink" href="/about">About</Link>
-					<Link className="hyperlink" href="/blogs">Blog</Link>
+		<nav className="flex items-center justify-between flex-wrap bg-[#FFFFFF] p-3 w-full px-[7%]">
+			<div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto  ">
+				<ul className="lg:flex-grow pl-20 text-[#3eff6b] hover:text-[#413c84]">
+					<Link className="hyperlink" href="/">
+						Beranda
+					</Link>
+					<Link className="hyperlink" href="/about">
+						Tentang Kami
+					</Link>
 				</ul>
-				<div>
-					<Button action={(e) => {alert('Triggered')}} title="Login"/>
-				</div>
+			</div>
+			<div className="flex items-center flex-shrink-0 mr-6">
+				<span className="font-semibold text-xl tracking-tight">
+					<Image
+						src={img1}
+						alt={"LOGO SEHJIRA footer.png"}
+						width={81}
+						height={87}
+					/>
+				</span>
+			</div>
+			<div className="w-full block flex-grow lg:w-auto lg:flex lg:items-center">
+				<ul className="flex lg:flex-grow justify-end pr-16 text-[#f437cb] hover:text-[#413c84]">
+					<Link className="hyperlink" href="/">
+						Hubungi Kami
+					</Link>
+					<Link className="hyperlink" href="/about">
+						Program Kami
+					</Link>
+				</ul>
 			</div>
 		</nav>
 	);
