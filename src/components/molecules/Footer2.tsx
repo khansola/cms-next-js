@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
+import img1 from '@/components/assets/image/LOGO SEHJIRA footer.png'
+import img2 from '@/components/assets/image/Facebook1.png'
+import img3 from '@/components/assets/image/Twitter1.png'
+import img4 from '@/components/assets/image/Instagram1.png'
+import img5 from '@/components/assets/image/LinkedIn1.png'
+import img6 from '@/components/assets/image/YouTube1.png'
 
 function Footer() {
   const tautanCepat = [{
@@ -36,12 +42,14 @@ function Footer() {
       <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8">
         <div className="p-5">
           <ul>
+            <div className="mb-2">
             <Image
-              src="/images/LOGO_SEHJIRA_(1)_1.png"
+              src={img1}
               alt="sehjira"
               height={95}
               width={88}
             />
+            </div>
             <p className="w-4/6 pb-4 font-['DM Sans', sans-serif] font-normal font text-[18px]">
               Konsultan, Advokasi, Pelatihan & Pendidikan Disabilitas Therapist
               Terapi Wicara untuk Disabilitas Pendengaran
@@ -49,7 +57,7 @@ function Footer() {
             <div className="flex gap-3 pl-[3%] flex-wrap pb-5 px-20">
               <Link href={"/"}>
                 <Image
-                  src="/static/svgs/Facebook.svg"
+                  src={img2}
                   alt="facebook"
                   width={36}
                   height={36}
@@ -57,7 +65,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src="/static/svgs/Twitter.svg"
+                  src={img3}
                   alt="facebook"
                   width={36}
                   height={36}
@@ -65,7 +73,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src="/static/svgs/Instagram.svg"
+                  src={img4}
                   alt="instagram"
                   width={36}
                   height={36}
@@ -73,7 +81,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src="/static/svgs/Linkedin.svg"
+                  src={img5}
                   alt="linkedin"
                   width={36}
                   height={36}
@@ -81,7 +89,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src="/static/svgs/Youtube.svg"
+                  src={img6}
                   alt="youtube"
                   width={36}
                   height={36}

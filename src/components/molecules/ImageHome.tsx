@@ -3,6 +3,12 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import Button from '../atoms/Button';
 import Image from 'next/image';
+import img1 from '@/components/assets/image/Arrow Right.png'
+import img2 from '@/components/assets/image/Facebook2.png'
+import img3 from '@/components/assets/image/Twitter2.png'
+import img4 from '@/components/assets/image/Instagram2.png'
+import img5 from '@/components/assets/image/LinkedIn2.png'
+import img6 from '@/components/assets/image/YouTube2.png'
 
 const divStyle = {
   display: 'flex',
@@ -37,11 +43,11 @@ const ImageHome = () => {
       <Slide duration={3000}>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
-            <div className='flex flex-col pl-4 justify-center ' style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
-              <div>
+            <div className='flex flex-col  ' style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
+              <div className=' flex flex-col justify-center absolute mt-48'>
                 <div>
                   <Image
-                    src="/images/facebook2.png"
+                    src={img2}
                     alt="image"
                     width={50}
                     height={50}
@@ -49,7 +55,7 @@ const ImageHome = () => {
                 </div>
                 <div>
                 <Image
-                    src="/images/container.png"
+                    src={img3}
                     alt="image"
                     width={50}
                     height={50}
@@ -57,7 +63,7 @@ const ImageHome = () => {
                 </div>
                 <div>
                 <Image
-                    src="/images/container.png"
+                    src={img4}
                     alt="image"
                     width={50}
                     height={50}
@@ -65,7 +71,15 @@ const ImageHome = () => {
                 </div>
                 <div>
                 <Image
-                    src="/images/container.png"
+                    src={img5}
+                    alt="image"
+                    width={50}
+                    height={50}
+                  />
+                </div>
+                <div>
+                <Image
+                    src={img6}
                     alt="image"
                     width={50}
                     height={50}
@@ -73,11 +87,18 @@ const ImageHome = () => {
                 </div>
               </div>
               <div>
-                <h1 className=' text-5xl text-white relative ml-5'> {slideImage.caption} </h1>
-                <p className=' mt-5 w-3/6 text-white pl-5'>{slideImage.desc}</p>
+                <h1 className=' text-5xl text-white relative ml-20 mt-60 w-1/5'> {slideImage.caption} </h1>
+                <p className=' mt-5 w-2/6 text-white ml-20'>{slideImage.desc}</p>
               </div>
-              <div className='ml-5 bg-red w-72 rounded mt-5 h-14    ' >
-                <Button style='p-4 ' title='PELAJARI LEBIH LANJUT' />
+              <div className='ml-20 bg-white w-72 rounded-full mt-5 h-14 flex    ' >
+                <Button style='px-[4%] ml-5  ' title='PELAJARI LEBIH LANJUT' />
+                {/* <Image 
+                    src={img1}
+                    alt="image"
+                    width={40}
+                    height={2}
+                    
+                  /> */}
               </div>
             </div>
           </div>
