@@ -14,7 +14,7 @@ function index() {
     <CommonSEO title="Home" description="Description of Create Next Page by hehe" />
     <PrimaryNavigation />
     <ImageHome />
-    <Button action={(e) => { alert('Triggered') }} title="Pelajari Lebih Lanjut" />
+    <Button action={(e) => { alert('Triggered') }} title="" />
     <Footer2 />
     <Footer />
 </BlankTemplate>

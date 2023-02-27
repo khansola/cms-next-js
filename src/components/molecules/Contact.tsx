@@ -5,7 +5,7 @@ import InputCustom from '../atoms/InputCustom';
 
 const Contact = () => {
   return (
-    <div className=' w-full flex px-[7%] gap-28'>
+    <div className=' w-full flex justify-between gap-14'>
       <div>
         <Image
           src={Image1}
@@ -14,9 +14,11 @@ const Contact = () => {
           height={919}
         />
       </div>
-      <div>
-        <h1 className='w-[506px] h-[50px] text-[40px] text-[#A03C78] mt-16'>Get in touch today</h1>
-        <p className='text-[#9795B5] mt-2'>Keep in touch with us!</p>
+      <div className='w-[65%]'>
+        <h1 className='w-[506px] h-[50px] text-[40px] text-[#A03C78] mt-16'>
+          Get in touch today</h1>
+        <p className='text-[#9795B5] mt-2'>
+          Keep in touch with us!</p>
         <ul className='flex gap-4'>
           <li>
             <div className=' w-[266px] h-[72px]'>

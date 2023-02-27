@@ -8,6 +8,7 @@ import PrimaryNavigation from "@/components/molecules/PrimaryNavigation";
 import Section2 from "@/components/molecules/Section2";
 import ProgramList from "@/components/molecules/ProgramList";
 import Footer2 from "@/components/molecules/Footer2";
+import MobileMenu from "@/components/molecules/MobileMenu";
 
 const index = () => {
 	return (
@@ -15,7 +16,6 @@ const index = () => {
 			<CommonSEO title="Home" description="Description of Create Next Page by GG" />
 			<PrimaryNavigation />
 			<ImageHome />
-			<Button action={(e) => { alert('Triggered') }} title="Pelajari Lebih Lanjut" />
 			<Section2 />
 			<ProgramList />
 			<Footer2 />

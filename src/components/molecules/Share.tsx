@@ -5,7 +5,7 @@ import Instagram from '@/components/assets/image/Instagram.png'
 import Twitter from '@/components/assets/image/Twitter.png'
 import Youtube from '@/components/assets/image/Youtube.png'
 import Link from 'next/link'
-import CardContents from '@/components/atoms/CardContents'
+
 
 
 function Share() {

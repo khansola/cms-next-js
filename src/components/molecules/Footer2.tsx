@@ -1,151 +1,155 @@
-import React from 'react'
-import Image from 'next/image'
-import img1 from '@/components/assets/image/LOGO SEHJIRA footer.png'
-import Link from 'next/link'
-import Facebook from '@/components/assets/image/Facebook1.png'
-import Instagram from '@/components/assets/image/Instagram1.png'
-import Twitter from '@/components/assets/image/Twitter1.png'
-import Linkedin1 from '@/components/assets/image/Linkedin1.png'
-import Youtube from '@/components/assets/image/Youtube1.png'
+import Image from "next/image";
+import Link from "next/link";
+import Links from "./Links";
 
-const Footer2 = () => {
+function Footer() {
+  const tautanCepat = [{
+    href: "/",
+    title: "Visi Kami"
+  },
+  {
+    href: "/",
+    title: "Kedai Kami"
+  },
+  {
+    href: "/",
+    title: "Karir"
+  },
+  {
+    href: "/",
+    title: "Berita & Informasi"
+  },
+  {
+    href: "/",
+    title: "Produk Kami"
+  },  {
+    href: "/",
+    title: "Cara Order"
+  },  {
+    href: "/",
+    title: "FAQ'S"
+  },
+  ]
+
   return (
-    <div className=' flex items-center justify-center mt-10 gap-[7rem] px-[7%]'>
-      <div className='flex flex-wrap flex-col'>
-        <Image
-          src={img1}
-          alt={"LOGO SEHJIRA footer.png"}
-          width={81}
-          height={87}
-        ></Image>
-        <p className=' container h-30 mt-5'>
-          Konsultan, Advokasi, Pelatihan & Pendidikan Disabilitas Therapist
-          Terapi Wicara untuk Disabilitas Pendengaran
-        </p>
-        <div>
-          <ul className='w-full flex gap-1 mt-5 justify-start   '>
-            <Link className="hyperlink" href="/">
-              <Image
-                src={Facebook}
-                alt={"Facebook.png"}
-              // width={81}
-              // height={87}
-              ></Image>
-            </Link>
-            <Link className="hyperlink" href="/">
-              <Image
-                src={Instagram}
-                alt={"Intagram.png"}
-              // width={81}
-              // height={87}
-              ></Image>
-            </Link>
-            <Link className="hyperlink" href="/">
-              <Image
-                src={Twitter}
-                alt={"Twitter.png"}
-              // width={81}
-              // height={87}
-              ></Image>
-            </Link>
-            <Link className="hyperlink" href="/">
-              <Image
-                src={Linkedin1}
-                alt={"LinkedIn.png"}
-              // width={81}
-              // height={87}
-              ></Image>
-            </Link>
-            <Link className="hyperlink" href="/">
-              <Image
-                src={Youtube}
-                alt={"Youtube.png"}
-              // width={81}
-              // height={87}
-              ></Image>
-            </Link>
+    <>
+      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8">
+        <div className="p-5">
+          <ul>
+            <Image
+              src="/images/LOGO_SEHJIRA_(1)_1.png"
+              alt="sehjira"
+              height={95}
+              width={88}
+            />
+            <p className="w-4/6 pb-4 font-['DM Sans', sans-serif] font-normal font text-[18px]">
+              Konsultan, Advokasi, Pelatihan & Pendidikan Disabilitas Therapist
+              Terapi Wicara untuk Disabilitas Pendengaran
+            </p>
+            <div className="flex gap-3 pl-[3%] flex-wrap pb-5 px-20">
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Facebook.svg"
+                  alt="facebook"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Twitter.svg"
+                  alt="facebook"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Instagram.svg"
+                  alt="instagram"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Linkedin.svg"
+                  alt="linkedin"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              <Link href={"/"}>
+                <Image
+                  src="/static/svgs/Youtube.svg"
+                  alt="youtube"
+                  width={36}
+                  height={36}
+                />
+              </Link>
+              {/* <FaYoutube className="text-2xl cursor-pointer hover:text-red-600" /> */}
+            </div>
           </ul>
         </div>
-      </div>
-      <div className='flex w-full gap-25 mr-24 '>
-        <div className='w-full '>
-          <div className='pb-5 '>
-            <Link className="hyperlink" href="/">
-              <p>
-                Tautan Cepat
-              </p>
-            </Link>
-          </div>
-          <div>
+
+        <div className="flex w-full">
+          <div className="p-5 flex flex-wrap w-auto">
             <ul>
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    Visi Kami
-                  </p>
-                </Link>
-              </li>
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    Kedai
-                  </p>
-                </Link>
-              </li>
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    Karir
-                  </p>
-                </Link>
-              </li>
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    Berita & Informasi
-                  </p>
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className='w-full pl-9 '>
-          <div className='pb-5 '>
-            <Link className="hyperlink" href="/">
-              <p>
-                Toko
+              <p className="text-gray-800 text-2xl pb-8 font-['DM Sans', sans-serif] text-[#843C74] font-semibold">
+                <Link href={"/"}>Tautan Cepat</Link>
               </p>
-            </Link>
+              {tautanCepat.slice(0,4).map((e, i) => {
+                return <li key={i} className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
+                  <Links href={e.href} title={e.title} />
+                </li>
+              })}
+            </ul>
           </div>
-          <div>
-            <ul >
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    Produk Kami
-                  </p>
-                </Link>
+
+          <div className="w-1/5"></div>
+
+          <div className="p-5 flex flex-wrap w-auto">
+            <ul>
+              <p className="text-gray-800 text-2xl pb-8 font-['DM Sans', sans-serif] text-[#843C74] font-semibold">
+                <Link href={"/"}>Toko</Link>
+              </p>
+              {tautanCepat.slice(4,7).map((e, i) => {
+                return <li key={i} className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
+                  <Links href={e.href} title={e.title} />
+                </li>
+              })}
+              {/* <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
+                <Link href={"/"}>Produk Kami</Link>
               </li>
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    Cara Order
-                  </p>
-                </Link>
+              <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
+                <Link href={"/"}>Cara Order</Link>
               </li>
-              <li className='pb-2'>
-                <Link className="hyperlink" href="/">
-                  <p>
-                    FAQ's
-                  </p>
-                </Link>
-              </li>
+              <li className="pb-2 font-['DM Sans', sans-serif] text-[#1E1E1E] hover:text-blue-600 cursor-pointer">
+                <Link href={"/"}>FAQ’s</Link>
+              </li> */}
             </ul>
           </div>
         </div>
+      </footer>
+      <div className="flex flex-col justify-center items-center text-center p-5">
+        <hr className="w-[100%] h-[1px] mx-auto bg-[black] border-0 my-8" />
+        <p className="text-[#767494] font-['DM Sans', sans-serif] text-[18px]">
+          © 2018 - 2023 Sehjira. Hak Cipta All Rights Reserved |{" "}
+          <span className="text-[#ADABC3]">Syarat dan Ketentuan | Privasi</span>
+        </p>
       </div>
-    </div>
-  )
+    </>
+  );
 }
 
-export default Footer2
+export default Footer;
+
+// const Footer = () => {
+//   return (
+//     <footer className="bg-gray-900 text-white p-6">
+//       Copyright &copy; 2023 by <a href="htpps://saltacademy.id">Salt Academy</a>
+//     </footer>
+//   );
+// };
+
+// export default Footer;
