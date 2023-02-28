@@ -1,12 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
-import img1 from "/static/image/LOGO_SEHJIRA_footer.png"
-import img2 from "/static/image/Facebook1.png"
-import img3 from "/static/image/Twitter1.png"
-import img4 from "/static/image/Instagram1.png"
-import img5 from "/static/image/LinkedIn1.png"
-import img6 from "/static/image/YouTube1.png"
+
 
 function Footer() {
   const tautanCepat = [{
@@ -44,7 +39,7 @@ function Footer() {
           <ul>
             <div className="mb-2">
             <Image
-              src={img1}
+              src="/static/image/LOGO_SEHJIRA_footer.png"
               alt="sehjira"
               height={95}
               width={88}
@@ -57,7 +52,7 @@ function Footer() {
             <div className="flex gap-3 pl-[3%] flex-wrap pb-5 px-20">
               <Link href={"/"}>
                 <Image
-                  src={img2}
+                  src="/static/image/Facebook1.png"
                   alt="facebook"
                   width={36}
                   height={36}
@@ -65,7 +60,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src={img3}
+                  src="/static/image/Twitter1.png"
                   alt="facebook"
                   width={36}
                   height={36}
@@ -73,7 +68,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src={img4}
+                  src="/static/image/Instagram1.png"
                   alt="instagram"
                   width={36}
                   height={36}
@@ -81,7 +76,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src={img5}
+                  src="/static/image/LinkedIn1.png"
                   alt="linkedin"
                   width={36}
                   height={36}
@@ -89,7 +84,7 @@ function Footer() {
               </Link>
               <Link href={"/"}>
                 <Image
-                  src={img6}
+                  src="/static/image/YouTube1.png"
                   alt="youtube"
                   width={36}
                   height={36}

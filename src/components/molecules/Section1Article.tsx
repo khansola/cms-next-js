@@ -27,7 +27,7 @@ const Section1Article = () => {
                 <ul className='flex gap-3 mt-1 px-[7%]'>
                     <li>
                         <Image
-                            src={img1}
+                            src='/static/image/Vector.png'
                             alt={"vector.png"}
                             width={18}
                             height={20.75}
@@ -40,10 +40,10 @@ const Section1Article = () => {
             </div>
             <div className=' w-full grid justify-center mt-5 px-[7%]'>
                 <Image
-                    src={img2}
+                    src='/static/image/Rectangle 229.png'
                     alt={"Rectangle 229.png"}
-                // width={81}
-                // height={87}
+                    width={1200}
+                    height={600}
                 ></Image>
             </div>
             <p className=' text-justify pt-5 px-[7%]'>
@@ -52,10 +52,10 @@ const Section1Article = () => {
             </p>
             <div className=' grid justify-center mt-5 px-[7%]'>
                 <Image
-                    src={img3}
+                    src='/static/image/Rectangle 228.png'
                     alt={"Rectangle 228.png"}
-                // width={81}
-                // height={87}
+                    width={600}
+                    height={400}
                 ></Image>
             </div>
             <p className='mt-5 text-justify px-[7%]  '>

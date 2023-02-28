@@ -3,12 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import Button from '../atoms/Button';
 import Image from 'next/image';
-import img1 from '@/components/assets/image/Arrow Right.png'
-import img2 from '/static/image/Facebook2.png'
-import img3 from '/static/image/Twitter2.png'
-import img4 from '/static/image/Instagram2.png'
-import img5 from '/static/image/LinkedIn2.png'
-import img6 from '/static/image/YouTube2.png'
+import Link from 'next/link';
 
 const divStyle = {
   display: 'flex',
@@ -45,46 +40,46 @@ const ImageHome = () => {
           <div key={index}>
             <div className='flex flex-col  ' style={{ ...divStyle, 'backgroundImage': `url(${slideImage.url})` }}>
               <div className=' flex flex-col justify-center absolute mt-48'>
-                <div>
+                <Link href="/">
                   <Image
-                    src={img2}
+                    src='/static/image/Facebook2.png'
                     alt="image"
                     width={50}
                     height={50}
                   />
-                </div>
-                <div>
+                </Link>
+                <Link href="/">
                 <Image
-                    src={img3}
+                    src='/static/image/Twitter2.png'
                     alt="image"
                     width={50}
                     height={50}
                   />
-                </div>
-                <div>
+                </Link>
+                <Link href="/">
                 <Image
-                    src={img4}
+                    src='/static/image/Instagram2.png'
                     alt="image"
                     width={50}
                     height={50}
                   />
-                </div>
-                <div>
+                </Link>
+                <Link href="/">
                 <Image
-                    src={img5}
+                    src='/static/image/LinkedIn2.png'
                     alt="image"
                     width={50}
                     height={50}
                   />
-                </div>
-                <div>
+                </Link>
+                <Link href="/">
                 <Image
-                    src={img6}
+                    src='/static/image/YouTube2.png'
                     alt="image"
                     width={50}
                     height={50}
                   />
-                </div>
+                </Link>
               </div>
               <div>
                 <h1 className=' text-5xl text-white relative ml-20 mt-60 w-1/5'> {slideImage.caption} </h1>
@@ -92,13 +87,13 @@ const ImageHome = () => {
               </div>
               <div className='ml-20 bg-white w-72 rounded-full mt-5 h-14 flex    ' >
                 <Button style='px-[4%] ml-5  ' title='PELAJARI LEBIH LANJUT' />
-                {/* <Image 
-                    src={img1}
+                <Image 
+                    src='/static/image/Arrow_Right.png'
                     alt="image"
-                    width={40}
-                    height={2}
+                    width={30}
+                    height={-20}
                     
-                  /> */}
+                  />
               </div>
             </div>
           </div>

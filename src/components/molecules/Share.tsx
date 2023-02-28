@@ -1,9 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import Facebook from '/static/image/Facebook.png'
-import Instagram from '/static/image/Instagram.png'
-import Twitter from '/static/image/Twitter.png'
-import Youtube from '/static/image/Youtube.png'
 import Link from 'next/link'
 
 
@@ -18,34 +14,34 @@ function Share() {
                     </li>
                     <Link className="hyperlink" href="/">
                         <Image
-                            src={Facebook}
+                            src='/static/image/Facebook.png'
                             alt={"Facebook.png"}
-                        // width={81}
-                        // height={87}
+                        width={81}
+                        height={87}
                         ></Image>
                     </Link>
                     <Link className="hyperlink" href="/">
                         <Image
-                            src={Instagram}
+                            src='/static/image/Instagram.png'
                             alt={"Intagram.png"}
-                        // width={81}
-                        // height={87}
+                        width={81}
+                        height={87}
                         ></Image>
                     </Link>
                     <Link className="hyperlink" href="/">
                         <Image
-                            src={Twitter}
+                            src='/static/image/Twitter.png'
                             alt={"Twitter.png"}
-                        // width={81}
-                        // height={87}
+                        width={81}
+                        height={87}
                         ></Image>
                     </Link>
                     <Link className="hyperlink" href="/">
                         <Image
-                            src={Youtube}
+                            src='/static/image/Youtube.png'
                             alt={"Youtube.png"}
-                        // width={81}
-                        // height={87}
+                        width={81}
+                        height={87}
                         ></Image>
                     </Link>
                 </ul>

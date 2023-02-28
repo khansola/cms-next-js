@@ -10,7 +10,7 @@ const ProgramList = () => {
         <h1>Program Unggulan SEHJIRA</h1>
       </div>
       <div className=' flex flex-wrap items-center justify-center gap-5'>
-        <CardContents />
+      <CardContents/>
         <div className='ml-5  text-[#843C74] w-auto rounded mt-5 mb-14 h-14    ' >
           <Button style='p-4 pb-20 ' title='Lihat Semua Program Unggulan' />
         </div>

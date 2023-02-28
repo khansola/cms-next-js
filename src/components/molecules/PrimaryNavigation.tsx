@@ -1,8 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import img1 from '/static/image/LOGO SEHJIRA footer.png'
-import burger from '@/components/assets/image/dehaze.svg'
+
+
 
 
 
@@ -27,7 +27,7 @@ const PrimaryNavigation = () => {
 					<div>
 						<Image
 							className={`cursor-pointer md:hidden block`}
-							src={img1}
+							src='/static/image/LOGO_SEHJIRA_footer.png'
 							height={87}
 							width={81}
 							alt="sehijra"
@@ -40,11 +40,11 @@ const PrimaryNavigation = () => {
 						<div className="mt-8 ">
 							<Image
 								className={`cursor-pointer md:hidden block`}
-								src={burger}
+								src='/static/image/dehaze.svg'
 								height={100}
 								width={100}
 								alt="burger"
-								
+
 							/>
 						</div>
 					</div>
@@ -67,14 +67,14 @@ const PrimaryNavigation = () => {
 						<div className="md:flex md:flex-row md:gap-10">
 							<p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
 								<Link href={"/"}>Beranda</Link>
-							</p> 
+							</p>
 							<p className="text-[#843C74] font-bold font-['DM Sans', sans-serif]">
 								<Link href={"/"}>Tentang Kami</Link>
 							</p>
 						</div>
 						<div className="hidden md:block ">
 							<Image
-								src={img1}
+								src='/static/image/LOGO_SEHJIRA_footer.png'
 								height={87}
 								width={81}
 								alt="sehijra"

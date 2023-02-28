@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Image1 from '/static/image/ibu2.png'
 import InputCustom from '../atoms/InputCustom';
 
+
 const Contact = () => {
   return (
     <div className=' w-full flex justify-between gap-14'>

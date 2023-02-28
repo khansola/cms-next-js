@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 
 import Image from 'next/image'
 
- const CardContents = () =>  {
+const CardContents = () => {
     const ProgramList = [{
         image: "/static/image/Container1.png",
         caption: "Pelatihan manajemen organısası bagı pengurus dan anggota SEHJIRA"
@@ -26,28 +26,31 @@ import Image from 'next/image'
 
 
     return (
+        <div className='flex flex-wrap justify-center gap-5'>{
             ProgramList.map((e, i) => {
                 return (
-                <div className='flex flex-row justify-center'>
-                <Card key={i} sx={{ maxWidth: 420, height: 450 }}>
-                    <div className='w-[100%]'>
-                        <Image
-                            src={e.image}
-                            alt={"vector.png"}
-                            width={400}
-                            height={220}
-                        ></Image>
+                    <div >
+                        <Card key={i} sx={{ maxWidth: 300, height: 400 }}>
+                            <div >
+                                <Image
+                                    src={e.image}
+                                    alt={"vector.png"}
+                                    width={350}
+                                    height={220}
+                                ></Image>
+                            </div>
+                            <CardContent>
+                                <Typography className='' gutterBottom variant="h5" component="div">
+                                    {e.caption}
+                                </Typography>
+                            </CardContent>
+                        </Card>
                     </div>
-                    <CardContent>
-                        <Typography className='' gutterBottom variant="h5" component="div">
-                            {e.caption}
-                        </Typography>
-                    </CardContent>
-                </Card>
-                </div>
                 )
             })
-    )
+        }</div>
+
+    );
 }
 
 export default CardContents

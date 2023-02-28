@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import Image1 from '@/components/assets/image/Container.jpg'
+
 
 const section2 = () => {
   return (
     <div className=' flex flex-wrap justify-center gap-6 '>
       <div className='mt-20'>
         <Image 
-        src={Image1} 
+        src='/static/image/container.jpg'
         alt={"gambarnenek"}
         width={675.68}
         height={919}
