@@ -1,9 +1,9 @@
 import React from 'react'
 import Image from 'next/image'
-import Facebook from '@/components/assets/image/Facebook.png'
-import Instagram from '@/components/assets/image/Instagram.png'
-import Twitter from '@/components/assets/image/Twitter.png'
-import Youtube from '@/components/assets/image/Youtube.png'
+import Facebook from '/static/image/Facebook.png'
+import Instagram from '/static/image/Instagram.png'
+import Twitter from '/static/image/Twitter.png'
+import Youtube from '/static/image/Youtube.png'
 import Link from 'next/link'
 
 

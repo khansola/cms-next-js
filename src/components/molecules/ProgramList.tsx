@@ -1,5 +1,5 @@
 import React from 'react'
-import CardContents from '@/components/atoms/CardContents'
+import CardContents from '../atoms/CardContents';
 import Button from '../atoms/Button'
 
 
@@ -11,8 +11,8 @@ const ProgramList = () => {
       </div>
       <div className=' flex flex-wrap items-center justify-center gap-5'>
         <CardContents />
-        <div className='ml-5 bg-white w-72 rounded mt-5 h-14    ' >
-          <Button style='p-4 ' title='PELAJARI LEBIH LANJUT' />
+        <div className='ml-5  text-[#843C74] w-auto rounded mt-5 mb-14 h-14    ' >
+          <Button style='p-4 pb-20 ' title='Lihat Semua Program Unggulan' />
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import img1 from '@/components/assets/image/LOGO SEHJIRA footer.png'
+import img1 from '/static/image/LOGO SEHJIRA footer.png'
 import burger from '@/components/assets/image/dehaze.svg'
 
 

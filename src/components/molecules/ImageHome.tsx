@@ -4,11 +4,11 @@ import 'react-slideshow-image/dist/styles.css'
 import Button from '../atoms/Button';
 import Image from 'next/image';
 import img1 from '@/components/assets/image/Arrow Right.png'
-import img2 from '@/components/assets/image/Facebook2.png'
-import img3 from '@/components/assets/image/Twitter2.png'
-import img4 from '@/components/assets/image/Instagram2.png'
-import img5 from '@/components/assets/image/LinkedIn2.png'
-import img6 from '@/components/assets/image/YouTube2.png'
+import img2 from '/static/image/Facebook2.png'
+import img3 from '/static/image/Twitter2.png'
+import img4 from '/static/image/Instagram2.png'
+import img5 from '/static/image/LinkedIn2.png'
+import img6 from '/static/image/YouTube2.png'
 
 const divStyle = {
   display: 'flex',

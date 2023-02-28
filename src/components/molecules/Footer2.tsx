@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
-import img1 from '@/components/assets/image/LOGO SEHJIRA footer.png'
-import img2 from '@/components/assets/image/Facebook1.png'
-import img3 from '@/components/assets/image/Twitter1.png'
-import img4 from '@/components/assets/image/Instagram1.png'
-import img5 from '@/components/assets/image/LinkedIn1.png'
-import img6 from '@/components/assets/image/YouTube1.png'
+import img1 from "/static/image/LOGO_SEHJIRA_footer.png"
+import img2 from "/static/image/Facebook1.png"
+import img3 from "/static/image/Twitter1.png"
+import img4 from "/static/image/Instagram1.png"
+import img5 from "/static/image/LinkedIn1.png"
+import img6 from "/static/image/YouTube1.png"
 
 function Footer() {
   const tautanCepat = [{
@@ -39,8 +39,8 @@ function Footer() {
 
   return (
     <>
-      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8">
-        <div className="p-5">
+      <footer className="bg-slate-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start pb-8 pt-10">
+        <div className="pl-24">
           <ul>
             <div className="mb-2">
             <Image

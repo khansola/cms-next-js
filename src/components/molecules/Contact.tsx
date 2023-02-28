@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Image1 from '@/components/assets/image/ibu2.png'
+import Image1 from '/static/image/ibu2.png'
 import InputCustom from '../atoms/InputCustom';
 
 const Contact = () => {

@@ -1,14 +1,11 @@
 import { CommonSEO } from "@/components/SEO";
-import Footer from "@/components/molecules/Footer";
 import BlankTemplate from "@/components/templates/BlankTemplate";
-import Link from "next/link";
-import Button from "@/components/atoms/Button";
 import ImageHome from "@/components/molecules/ImageHome";
 import PrimaryNavigation from "@/components/molecules/PrimaryNavigation";
 import Section2 from "@/components/molecules/Section2";
 import ProgramList from "@/components/molecules/ProgramList";
 import Footer2 from "@/components/molecules/Footer2";
-import MobileMenu from "@/components/molecules/MobileMenu";
+
 
 const index = () => {
 	return (
@@ -19,7 +16,6 @@ const index = () => {
 			<Section2 />
 			<ProgramList />
 			<Footer2 />
-			<Footer />
 		</BlankTemplate>
 	);
 };

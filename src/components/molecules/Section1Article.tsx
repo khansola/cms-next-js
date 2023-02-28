@@ -1,9 +1,9 @@
 import React from 'react'
 import Link from "next/link";
 import Image from 'next/image'
-import img1 from '@/components/assets/image/Vector.png'
-import img2 from '@/components/assets/image/Rectangle 229.png'
-import img3 from '@/components/assets/image/Rectangle 228.png'
+import img1 from '/static/image/Vector.png'
+import img2 from '/static/image/Rectangle 229.png'
+import img3 from '/static/image/Rectangle 228.png'
 import { Box } from '@mui/system'
 
 const Section1Article = () => {
